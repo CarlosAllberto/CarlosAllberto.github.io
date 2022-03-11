@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+header #nav {
+    margin: auto;
+    padding-left: 150vh;
+}
+
+header #nav a {
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    font-weight: bold;
+}
+
+#nav .ativo {
+    color: black;
+}
+
+#burger {
+    padding-left: 60%;
+    margin: auto;
+    text-align: right;
+    display: none;
+}
+
+#bt {
+    transition: .3s;
+}
+
+#rel-1, #rel-2, #rel-3 {
+    background-color: gray;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.active #rel-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.active #rel-2 {
+    opacity: 0;
+}
+
+.active #rel-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.active #bt {
+    transform: rotate(360deg);
+}
+
+main {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(72, 72, 153);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto auto;
+}
+
+.row {
+    margin: 10px auto;
+    background-color: #FFF;
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgb(0, 0, 0, 0.280);
+}
+
+.row:hover {
+    transform: translateY(-12px);
+}
+
+@media (max-width: 670px) {
+    header #nav {
+        display: none;
+    }
+
+    header #burger {
+        display: inline;
+    }
+
+    .row {
+        width: 40%;
+    }
+}
+
+@media (max-width: 570px) {
+    #container {
+        display: block;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .row:hover {
+        transform: none;
+    }
+}
