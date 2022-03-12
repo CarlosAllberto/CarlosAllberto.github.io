@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #F4F4F4;
+    background-color: #f9f9f9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
 
 header #nav {
     margin: auto;
-    padding-left: 150vh;
+    padding-left: 140vh;
 }
 
 header #nav a {
@@ -35,6 +36,7 @@ header #nav a {
     margin: auto;
     text-align: right;
     display: none;
+    cursor: pointer;
 }
 
 #bt {
@@ -69,34 +71,63 @@ header #nav a {
 }
 
 main {
-    padding: 2rem;
-    margin: 0 auto;
+    padding: 4rem;
+    margin: auto;
     text-align: center;
+    color: gray;
 }
 
-h1 {
-    color: rgb(72, 72, 153);
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.205);
+h1, h3 {
+    color: rgb(30, 30, 30);
+}
+
+p {
+    font-size: .9em;
 }
 
 #container {
+    padding: 40px 0 40px 25px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 800px;
-    margin: auto auto;
+    margin: auto;
 }
 
 .row {
-    margin: 10px auto;
+    margin: 15px 10px;
     background-color: #FFF;
-    width: 180px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 7px rgb(0, 0, 0, 0.280);
+    width: 270px;
+    height: 195px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.100);
+    cursor: pointer;
+}
+
+.row h3 {
+    padding: 95px 0 10px 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.100);
 }
 
 .row:hover {
-    transform: translateY(-12px);
+    color: #FFF;
+    transition: .3s;
+    transform: translateY(-5px);
+    background-color: orangered;
+}
+
+.row:hover h3 {
+    color: #FFF;
+}
+
+button {
+    background-color: orangered;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button h3 {
+    color: #FFF;
 }
 
 @media (max-width: 670px) {
@@ -108,21 +139,11 @@ h1 {
         display: inline;
     }
 
-    .row {
-        width: 40%;
-    }
-}
-
-@media (max-width: 570px) {
     #container {
         display: block;
     }
 
     .row {
         width: 100%;
-    }
-
-    .row:hover {
-        transform: none;
     }
 }
