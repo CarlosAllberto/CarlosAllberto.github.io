@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --texto: rgb(253, 255, 233);
+    --azul: rgb(28, 148, 179);
+    --black: rgb(50, 50, 50);
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*--------------------------------------------- modo dark */
+body.dark {
+    background-color: rgb(29, 29, 29);
+}
+
+body.dark header {
+    background-color: black;
+}
+
+body.dark header i {
+    color: var(--azul);
+}
+
+body.dark footer {
+    background-color: black;
+}
+
+body.dark h2 {
+    color: var(--texto);
+    text-decoration: underline .5px var(--texto);
+}
+
+body.dark h3 {
+    color: var(--texto);
+}
+
+body.dark #bloco-3 .col {
+    box-shadow: 5px 5px 7px rgba(28, 149, 179, 0.200);
+    background-color: rgb(73, 73, 73);
+}
+
+body.dark #bloco-3 img {
+    border-bottom: .5px solid white;
+}
+
+body.dark #bloco-4 p {
+    color: var(--texto);
+}
+
+body.dark #menu-burger {
+    background-color: black;
+    box-shadow: inset 0px 5px 7px rgba(28, 149, 179, 0.300);
+}
+/*---------------------------------------- fim do modo dark */
+
+header {
+    background-color: rgb(44, 44, 49);
+    width: 100%;
+    padding: .5rem 0;
+}
+
+header .container {
+    margin: auto;
+    width: 900px;
+}
+
+header .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header .col {
+    margin: auto;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    margin: -10px;
+    filter: drop-shadow(1px 1px 3px rgb(28, 148, 179));
+}
+
+header a {
+    padding: 0 10px;
+}
+
+header a.active {
+    color: var(--azul);
+}
+
+header i {
+    color: yellow;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+    top: 1rem;
+    cursor: pointer;
+}
+
+header div {
+    margin: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+header a:hover {
+    text-decoration: underline var(--azul);
+    color: var(--texto);
+}
+
+/*--------------------------------------------- burger*/
+header .mobile {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#burger-on {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 1.5rem;
+    cursor: pointer;
+}
+
+#burger-on .col-1 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-on .col-2 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-on .col-3 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off {
+    display: inline;
+    position: fixed;
+    right: 10px;
+    top: 1.5rem;
+    cursor: pointer;
+}
+
+#burger-off .col-1 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off .col-2 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#burger-off .col-3 {
+    background-color: white;
+    border-radius: 1px;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 6px;
+}
+
+#menu-burger {
+    display: none;
+    background-color: rgb(44, 44, 49);
+    width: 100%;
+    height: 400px;
+    top: 0;
+    right: 0;
+    box-shadow: inset 0px 5px 7px rgba(0, 0, 0, 0.400);
+    margin-top: 4.7rem;
+    padding-top: 3rem;
+    position: absolute;
+}
+
+#menu-burger .show {
+    display: block;
+}
+
+#menu-burger i {
+    padding-left: 1.2rem;
+    position: initial;
+}
+
+#menu-burger a {
+    display: block;
+    padding: 5px 20px;
+}
+/*--------------------------------------------- fim do burger*/
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+p {
+    color: var(--black);
+}
+
+h2 {
+    color: var(--black);
+    text-decoration: underline .5px var(--black);
+}
+
+h3 {
+    color: var(--black);
+}
+
+#bloco-1 {
+    background-image: url("https://mundodecursos.com.br/wp-content/uploads/2021/11/cursos-gratuitos-loja-virtual.webp");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 250px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom center;
+    font-size: 20px;
+    padding-top: 2rem;
+    box-shadow: inset 0 -5px 7px rgba(0, 0, 0, 0.500);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.300);
+    margin-bottom: 5rem;
+}
+
+#bloco-1 p {
+    color: var(--texto);
+}
+
+#bloco-1 strong {
+    color: var(--azul);
+    font-size: 4rem;
+}
+
+#bloco-2 {
+    padding-bottom: 5rem;
+}
+
+#bloco-2 h2 {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+/*
+#carouselExampleIndicators {
+    background-color: var(--azul);
+    height: 300px;
+}
+
+#carouselExampleIndicators .carousel-item {
+    width: 300px;
+}
+*/
+
+#bloco-2 .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#bloco-2 .col {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
+    padding: 10px 20px;
+    background-color: white;
+}
+
+#bloco-3 {
+    padding-bottom: 5rem;
+}
+
+#bloco-3 a {
+    text-decoration: none;
+}
+
+#bloco-3 h2 {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+#bloco-3 .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+#bloco-3 .col {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 7px rgba(0, 0, 0, 0.100);
+    padding: 10px 20px;
+}
+
+#bloco-3 .col:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+#bloco-3 img {
+    width: 100%;
+    border-bottom: .5px solid var(--black);
+}
+
+#bloco-3 p {
+    color: rgb(66, 168, 97);
+}
+
+#bloco-4 h2 {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+}
+
+#bloco-4 p {
+    color: var(--black);
+    padding: 0 0 20px 0;
+    width: 700px;
+    margin: auto;
+    text-align: justify;
+}
+
+footer {
+    background-color: rgb(44, 44, 49);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    color: var(--texto);
+}
+
+footer .logo-footer {
+    width: 80px;
+    margin: -10px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+}
+
+footer .container {
+    width: 500px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--texto);
+}
+
+footer a:hover {
+    text-decoration: underline var(--azul);
+    color: var(--texto);
+}
+
+footer img {
+    margin: 30px 10px;
+    width: 30px;
+}
+
+footer a img:hover {
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+/*----------------------------------------------- resposividade */
+@media (max-width: 700px) {
+    header .container {
+        display: none;
+    }
+ 
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    #bloco-1 {
+        background-size: auto auto;
+        background-position: top;
+    }
+
+    #carouselExampleIndicators img {
+        height: 200px;
+    }
+
+    #bloco-3 .row {
+        display: block;
+        padding-bottom: 0;
+        padding: 0 2rem;
+    }
+
+    #bloco-3 .col {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    #bloco-3 .col:hover {
+        transform: none;
+    }
+
+    #bloco-4 p {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    footer .container {
+        width: 100%;
+    }
+
+    footer .row {
+        display: block;
+    }
+}
