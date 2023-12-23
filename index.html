@@ -2,67 +2,96 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>N-3-T</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <title>Modelo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Cabeçalho</h1>
-        <div id="nav">
-            <a href="#" class="ativo">HOME</a>
-            <a href="#">CLIENTES</a>
-            <a href="#">SERVIÇOS</a>
-        </div>
-        <div id="burger" class="inactive" onclick="burger(this)">
-            <div id="bt">
-                <div id="rel-1"></div>
-                <div id="rel-2"></div>
-                <div id="rel-3"></div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="logo fw-bold fs-2">LOGO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <hr>
-    <main>
-        <h1>Explore our categories</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div id="container">
-            <div class="row">
-                <h3>Marketing</h3>
-                <p>2 Items</p>
+    </nav>
+
+    <main class="my-5">
+        <section class="my-5">
+            <div class="container">
+                <h3>Lorem</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                        <div class="paper p-4 rounded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur, nam impedit animi voluptate culpa. Doloremque debitis ipsa ipsum rem, nemo dolor aspernatur, at impedit, tempore voluptatibus placeat praesentium similique.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="paper p-4 rounded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur, nam impedit animi voluptate culpa. Doloremque debitis ipsa ipsum rem, nemo dolor aspernatur, at impedit, tempore voluptatibus placeat praesentium similique.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <h3>Project managment</h3>
-                <p>2 Items</p>
+        </section>
+        <section class="my-5">
+            <div class="container">
+                <h3>Lorem</h3>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-4">
+                        <div class="paper p-4 rounded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur, nam impedit animi voluptate culpa. Doloremque debitis ipsa ipsum rem, nemo dolor aspernatur, at impedit, tempore voluptatibus placeat praesentium similique.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="paper p-4 rounded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur, nam impedit animi voluptate culpa. Doloremque debitis ipsa ipsum rem, nemo dolor aspernatur, at impedit, tempore voluptatibus placeat praesentium similique.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="paper p-4 rounded">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur, nam impedit animi voluptate culpa. Doloremque debitis ipsa ipsum rem, nemo dolor aspernatur, at impedit, tempore voluptatibus placeat praesentium similique.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <h3>Design</h3>
-                <p>2 Items</p>
-            </div>
-            <div class="row">
-                <h3>Idea generation</h3>
-                <p>2 Items</p>
-            </div>
-            <div class="row">
-                <h3>Naming</h3>
-                <p>2 Items</p>
-            </div>
-            <div class="row">
-                <h3>Domain names</h3>
-                <p>2 Items</p>
-            </div>
-            <div class="row">
-                <h3>Hosting</h3>
-                <p>2 Items</p>
-            </div>
-            <div class="row">
-                <h3>Market research</h3>
-                <p>2 Items</p>
-            </div>
-        </div>
-        <button><h3>Show more categories</h3></button>
+        </section>
     </main>
+
+    <footer>
+        <div class="container d-flex align-items-center justify-content-between h-100">
+            <div class="text-center">
+                <span class="logo fw-bold fs-2">LOGO</span>
+            </div>
+            <div class="text-center">
+                <i>Desenvolvido por: Treendz</i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
